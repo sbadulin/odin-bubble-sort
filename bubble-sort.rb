@@ -3,10 +3,8 @@ def bubble_sort(arr)
     swapped = false
     iter = 0
     while iter < (arr.length-1)
-      temp = arr[iter]
       if arr[iter]>arr[iter+1]
-        arr[iter] = arr[iter+1]
-        arr[iter+1] = temp
+        arr[iter], arr[iter+1] = arr[iter+1], arr[iter]
         swapped = true
       end
       iter += 1
